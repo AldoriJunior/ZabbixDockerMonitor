@@ -12,8 +12,9 @@ Templates:
 * Template DockerMonitor (Active)
 
 # Requirements
-Python3
-Py-Zabbix lib
+
+* Python3
+* Py-Zabbix lib
 
 # Configuring
 
