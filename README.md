@@ -62,5 +62,6 @@ Everything in docker stats:
 # TODO
 
 Separate data submission and byte calculation functions in:
-Zabbix-DockerMonitor-SendData.py
-Zabbix-DockerMonitor-PrepareData.py
+
+* Zabbix-DockerMonitor-SendData.py
+* Zabbix-DockerMonitor-PrepareData.py
