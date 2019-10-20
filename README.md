@@ -47,10 +47,10 @@ Everything in docker stats:
 * ContainerID of container {#DOCKERINSTANCE}
 * ContainerName of container {#DOCKERINSTANCE}
 * Total memory of container {#DOCKERINSTANCE}
-* Memory use of container {#DOCKERINSTANCE}
+* Memory used of container {#DOCKERINSTANCE}
 * NETIO INPUT of container {#DOCKERINSTANCE}
 * NETIO OUTPUT of container {#DOCKERINSTANCE}
 * Percentage of memory used by container {#DOCKERINSTANCE}
 * PID of container {#DOCKERINSTANCE}
-* Total CPU (divided by number of colors) used by container {#DOCKERINSTANCE}
-* Total CPU (sum all colors) used by container {#DOCKERINSTANCE}
+* Total CPU (divided by number of vcpus) used by container {#DOCKERINSTANCE}
+* Total CPU (sum all vcpus) used by container {#DOCKERINSTANCE}
