@@ -58,3 +58,9 @@ Everything in docker stats:
 * PID of container {#DOCKERINSTANCE}
 * Total CPU (divided by number of vcpus) used by container {#DOCKERINSTANCE}
 * Total CPU (sum all vcpus) used by container {#DOCKERINSTANCE}
+
+# TODO
+
+Separate data submission and byte calculation functions in:
+Zabbix-DockerMonitor-SendData.py
+Zabbix-DockerMonitor-PrepareData.py
