@@ -11,6 +11,10 @@ Templates:
 
 * Template DockerMonitor (Active)
 
+# Requirements
+Python3
+Py-Zabbix lib
+
 # Configuring
 
 To configure docker container monitoring, follow the steps below:
