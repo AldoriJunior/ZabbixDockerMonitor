@@ -13,7 +13,7 @@ Templates:
 
 # Requirements
 
-* Python3
+* Python3.6
 * Py-Zabbix lib
 
 # Configuring
