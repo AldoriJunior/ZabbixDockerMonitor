@@ -214,10 +214,8 @@ class DockerMonitor(object):
                     logging.info("Data Sent to Zabbix Server Successfully!")
                 except:
                     logging.warning("Unable to send data to Zabbix Server!")
-                    # Print 0 to inform error in a script execution
         except:
             logging.debug("Conversion fail in Literal_Eval")
-            # Print 0 to inform error in a script execution
 
         
 
