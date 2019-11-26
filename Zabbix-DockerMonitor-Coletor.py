@@ -212,16 +212,12 @@ class DockerMonitor(object):
                     self._send_data(hostname,'docker.instance['+dockerinstance.upper()+',blockio_input]',blockio_input)
                     self._send_data(hostname,'docker.instance['+dockerinstance.upper()+',blockio_output]',blockio_output)
                     logging.info("Data Sent to Zabbix Server Successfully!")
-                    # Print 1 to inform success in a script execution
-                    print("1")
                 except:
                     logging.warning("Unable to send data to Zabbix Server!")
                     # Print 0 to inform error in a script execution
-                    print("0")
         except:
             logging.debug("Conversion fail in Literal_Eval")
             # Print 0 to inform error in a script execution
-            print("0")
 
         
 
@@ -279,7 +275,6 @@ def main():
     except socket.timeout:
         logging.info("Initial connection test with Zabbix Proxy / Server returned failed! Aborting!")
         logging.info("Check ZabbixServer Settings in variables")
-        print("0")
         exit(0)
 
 
