@@ -77,9 +77,9 @@ class DockerMonitor(object):
                     memory_total = memory.split('/ ')[-1]
                     # here we make a conversion to bytes, to use in Zabbix 
                     # before this, for result (Kb, MiB, GiB, MB, GB), we need to make a different calc
-                    if "kB" in str(memory_usage):
+                    if "KiB" in str(memory_usage):
                         # remove string
-                        memory_usage = memory_usage.replace("kB", "")
+                        memory_usage = memory_usage.replace("KiB", "")
                         # make a float number
                         memory_usage = float(memory_usage)
                         # multiply results according to data type
@@ -96,8 +96,8 @@ class DockerMonitor(object):
                         memory_usage = float(memory_usage)
                         memory_usage = memory_usage * 1073741824
                         memory_usage = int(round(memory_usage))
-                    if "kB" in str(memory_total):
-                        memory_total = memory_total.replace("kB", "")
+                    if "KiB" in str(memory_total):
+                        memory_total = memory_total.replace("KiB", "")
                         memory_total = float(memory_total)
                         memory_total = memory_total * 1024
                         memory_total = int(round(memory_total))
@@ -132,7 +132,7 @@ class DockerMonitor(object):
                     netio_input = float(netio_input)
                     netio_input = netio_input * 1073741824
                     netio_input = int(round(netio_input))
-                elif "0B" in str(netio_input):
+                elif "B" in str(netio_input):
                     netio_input = netio_input.replace("B", "")
                     netio_input = int(netio_input)
                 if "kB" in str(netio_output):
@@ -150,7 +150,7 @@ class DockerMonitor(object):
                     netio_output = float(netio_output)
                     netio_output = netio_output * 1073741824
                     netio_output = int(round(netio_output))
-                elif "0B" in str(netio_output):
+                elif "B" in str(netio_output):
                     netio_output = netio_output.replace("B", "")
                     netio_output = int(netio_output)
 
@@ -172,7 +172,7 @@ class DockerMonitor(object):
                     blockio_input = float(blockio_input)
                     blockio_input = blockio_input * 1073741824
                     blockio_input = int(round(blockio_input))
-                elif "0B" in str(blockio_input):
+                elif "B" in str(blockio_input):
                     blockio_input = blockio_input.replace("B", "")
                     blockio_input = int(blockio_input)
                 if "kB" in str(blockio_output):
@@ -190,7 +190,7 @@ class DockerMonitor(object):
                     blockio_output = float(blockio_output)
                     blockio_output = blockio_output * 1073741824
                     blockio_output = int(round(blockio_output))
-                elif "0B" in str(blockio_output):
+                elif "B" in str(blockio_output):
                     blockio_output = blockio_output.replace("B", "")
                     blockio_output = int(blockio_output)
                 cpu = result[u'cpu']
